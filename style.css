@@ -1,0 +1,32 @@
+* {
+    margin: auto;
+    width: 80%;
+    padding: 0;
+}
+body{
+    background-color: #01171b;
+}
+svg path{
+
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: .25;
+}
+svg path:hover{
+fill: #4387be;
+transition: 0.6s;
+cursor: pointer;
+}
+/* Agregar una imagen superpuesta cuando el cursor estÃ¡ sobre la clase "huehue" */
+.huehue:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('umg.png'); 
+    background-size: cover;
+    opacity: 0.7; /* Ajustar la opacidad de la imagen superpuesta*/
+  }
+  
